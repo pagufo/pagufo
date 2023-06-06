@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pablo Guillot</title>
+    <link rel="icon" href="images/gatoicon.jpg" type="icon/images">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+          
+        }
+
+        h1 {
+            font-style: italic;
+            text-align: center;
+        }
+
+        .clock {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 450px;
+            height: 550px;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding-left: 0%;
+        }
+
+        .links li {
+            margin: 0 7px;
+        }
+
+    </style>
+     <script>
+        function updateTime() {
+            var date = new Date();
+            var options = { timeZone: 'Europe/Madrid', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+            var timeString = date.toLocaleTimeString('en-US', options);
+            document.getElementById('clock').innerHTML = timeString;
+        }
+
+        setInterval(updateTime, 1000);
+
+    </script>
+</head>
+<body>
+    <h1>PABLO GUILLOT</h1>
+    <img src="/portfolio/images/Escáner_20230606 (13).png"></a></p>
+    <p>TIEMPO EN VALENCIA, ESPAÑA</p><div class="clock" id="clock"></div>
+    <div>
+        <ul class="links">
+            <li><a href="/portfolio/pages/about.html">sobre mi</a></li>
+            <li><a href="https://drive.google.com/file/d/1Es1hSibn64DGM-WtpbBAcKcGAY-ZJxZ4/view?usp=sharing">curriculum</a></li>
+            <li><a href="/portfolio/pages/contact.html">contacto</a></li>
+        </ul>
+    </div>
+</body>
+</html>
